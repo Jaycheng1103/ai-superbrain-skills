@@ -5,7 +5,7 @@
 
 ---
 
-## 📦 內含 4 支 Skill
+## 📦 內含 5 支 Skill
 
 | Skill | 它幫你做什麼 | 下載 |
 |------|------------|------|
@@ -13,6 +13,7 @@
 | **FB 長文寫手** | 把一個主題寫成 1500–3000 字、讀到最後的臉書長文 | [`fb-post-writer.skill`](FB長文寫手/fb-post-writer.skill) |
 | **短影音腳本寫手** | 一個素材批量產 3–20 支高完播率短影音腳本 | [`reels-script-writer.skill`](短影音腳本寫手/reels-script-writer.skill) |
 | **IG 輪播圖卡寫手** | 把主題做成 5–10 張你品牌配色的 IG 輪播圖卡（含 HTML） | [`ig-carousel-writer.skill`](IG輪播圖卡寫手/ig-carousel-writer.skill) |
+| **Threads 爆文模板教練** | 用 20 個爆文模板，把故事／選題變成 Threads 串文 | [`threads-template-coach.skill`](Threads爆文模板教練/threads-template-coach.skill) |
 
 每個資料夾裡都有一份 `如何使用.md`，點進去看該支 skill 的詳細用法。
 
@@ -50,6 +51,7 @@
 - 「把這個主題寫成 FB 長文」→ FB 長文寫手
 - 「這個主題幫我做 5 支短影音」→ 短影音腳本寫手
 - 「把這個做成 IG 輪播」→ IG 輪播圖卡寫手
+- 「把這個故事寫成 Threads」→ Threads 爆文模板教練
 
 ---
 
