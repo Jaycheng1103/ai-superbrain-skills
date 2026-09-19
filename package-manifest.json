@@ -1,0 +1,61 @@
+{
+  "version": "2026-09-19",
+  "packages": [
+    {
+      "repo": "superbrain-fb-post-writer",
+      "skill": "fb-post-writer",
+      "base_commit": "7c86237b9fad5bb76c3c22fafc98b0087aeabad5",
+      "package": "FB長文寫手/fb-post-writer.skill",
+      "sha256": "8e4daff5bb5b78c3aca4be2023ce6a31d8ef52b3df745e16a7ca8ab7e828acea",
+      "source_files": {
+        "CHANGELOG.md": "c03e93edc77e47c02f5fa9c9af718b0abd14d0fa61b899d6a1556af6f3d4d2e5",
+        "README.md": "5adae99cc240c7f30b64ba19439626aaffa86163d469e6219434acd2895af09b",
+        "SKILL.md": "ed692e794ead45fb99af09bfba49c8f4625ecaf386c513ade8e2ec476b793bbe",
+        "references/作者資料模板.md": "2f9b1f7b454c39d7e3a4796c7d40160bdef2669a8b57d213c1a8f2e28f1889ac",
+        "references/安裝與開始.md": "3ed426c75a4b78c2a9ffca7ede35657c8f15fa888d4e06273efba29c27a2cad4",
+        "references/寫作與事實規則.md": "c1c0d659361edbfb819c1ff95081ff9d7d9f62ed1b8ab2a468f3a0b799106db5",
+        "如何使用.md": "33f75e81bdf3d691930f5df040d1894f34e4c566f125bc3b6024494b21218e4d"
+      }
+    },
+    {
+      "repo": "superbrain-ig-carousel-writer",
+      "skill": "ig-carousel-writer",
+      "base_commit": "4ebae464ca96ebb7cd1cbba0641b4e9b61f2f6c8",
+      "package": "IG輪播圖卡寫手/ig-carousel-writer.skill",
+      "sha256": "4f856dbca19ff0542066ed3edd1393de2de53bb8456e8ad5d1bc46c65a1ba14f",
+      "source_files": {
+        "CHANGELOG.md": "c03e93edc77e47c02f5fa9c9af718b0abd14d0fa61b899d6a1556af6f3d4d2e5",
+        "README.md": "5feb4c2aca438f3e8cfe09ab5964a6b87b56c748f986991b77a1171c2b6e24b2",
+        "SKILL.md": "e3175aa64a4afb1d389437e9a1cdc22b5bd5d5eef42755e14eeff572b73f6276",
+        "references/design-system.md": "02cbcdd56cf83488173ec803ae38a3959676519412e8a9e54fa405d589478fd7",
+        "references/output-template.md": "7d1a22bc1085bd5a3f9f275a6359c92a2660e8cfa23c7ca5766e9dba8198b22c",
+        "references/real-world-assets.md": "12c9aa0db1f168855e7df169792d6c7c7689333cf3ab29b759d16984792a9e0d",
+        "references/品牌設定模板.md": "3b6fc3185cee9894d6c9442ae80feac811d71192720494ad43ea110973d2cd84",
+        "references/安裝與開始.md": "3ed426c75a4b78c2a9ffca7ede35657c8f15fa888d4e06273efba29c27a2cad4",
+        "references/寫作與事實規則.md": "c1c0d659361edbfb819c1ff95081ff9d7d9f62ed1b8ab2a468f3a0b799106db5",
+        "如何使用.md": "3e66ed499c1568634eb9a836edd1417e22ba1d9d92b5cce6ee04eab5c5c03306"
+      }
+    },
+    {
+      "repo": "superbrain-reels-script-writer",
+      "skill": "reels-script-writer",
+      "base_commit": "64e12163ebdfce9316cf1ec97e7df62cee9a7a24",
+      "package": "短影音腳本寫手/reels-script-writer.skill",
+      "sha256": "dc632f3707019085d8f0f027986870b4413e837ca01f331adde9868b95ae2d1a",
+      "source_files": {
+        "CHANGELOG.md": "c03e93edc77e47c02f5fa9c9af718b0abd14d0fa61b899d6a1556af6f3d4d2e5",
+        "LICENSE.md": "87249ac28c292db775ae0300ecede565031d45d93bfee11cc9d29a79190d9b58",
+        "README.md": "9cf789168e358683cce4b20ee8a4acf0aba00b3a22141b174549e6401f5c7059",
+        "SKILL.md": "56d1f3a253ab28ebf0b98da1b0ec6f6406ae1060d9d433153469766e75aed3ee",
+        "references/四種內容類型.md": "bed7b2ddd5c6dbcc4b1dbc3c322775aff65471de5e9aa997898dffa96a923ca4",
+        "references/安裝與開始.md": "3ed426c75a4b78c2a9ffca7ede35657c8f15fa888d4e06273efba29c27a2cad4",
+        "references/寫作與事實規則.md": "c1c0d659361edbfb819c1ff95081ff9d7d9f62ed1b8ab2a468f3a0b799106db5",
+        "references/範例.md": "5a28ec33a35b90ea64128b6f6a7ec54031ba45deeb5fdf380c548a6935f29914",
+        "references/萬能腳本公式.md": "0543ee76033db5d7303aae339133e9db8c30a263460970ecea7d2faa8bc1efdf",
+        "references/輸出模板.md": "d9f4da16375c26b4d74527b3d02fe9e6cc0bb5f16ffeb4d46d47d50c9db240d7",
+        "如何使用.md": "7389421ef8c4a0406b78242987d86438ccd880ca7066e9e27b3f193d9abd3dca"
+      }
+    }
+  ],
+  "scope": "Three updated skills. Existing topic-finder and threads packages are unchanged and not revalidated."
+}
