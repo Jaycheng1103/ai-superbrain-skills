@@ -1,0 +1,5 @@
+Noto Sans TC Regular and Bold
+Copyright (c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+Licensed under the SIL Open Font License, Version 1.1. See OFL.txt.
+License text source: https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE
+Fonts are included unmodified; embedded/subset in exported PDF by ReportLab.

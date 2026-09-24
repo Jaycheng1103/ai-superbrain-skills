@@ -2,16 +2,22 @@
 
 把自己的素材整理成 FB 長文、短影音腳本與 IG 輪播。先完成一份主稿，再依需求改編；每一份都用自己的語氣、真實經歷與品牌。
 
-## 一次安裝完整三件組
+## 6P 產品手冊訪談教練（2026-09-24 新增）
+
+適合教練、顧問、接案、行銷、房仲、保險與其他行業。逐步訪談完成六個 P，再用學員自己的 Tavily 研究至少五個相關競品，附來源與改善建議，輸出 PDF；可依要求上傳自己的 Google Drive。
+
+**[6P 學員安裝與使用入口](six-p-handbook/README.md)** · [下載 6P 安裝包](downloads/six-p-product-handbook-v2.zip?raw=true)
+
+## 一次安裝內容創作三件組
 
 這次新版包含 **FB 長文、短影音腳本、IG 輪播** 三支 skill。把本頁連結與下面這段話一起貼給支援安裝 skills 的 AI agent：
 
-> 請從 https://github.com/Jaycheng1103/ai-superbrain-skills 安裝 skills/ 內的全部三支技能：fb-post-writer、reels-script-writer、ig-carousel-writer。先確認我的工具支援技能安裝，檢查同名版本並備份客製內容，再依目前環境安裝。安裝後逐一讀回 SKILL.md 與 references，列出三個名稱和實際安裝位置，並各做一次簡短測試。若目前工具不支援安裝，請說明如何下載、匯入或當作本次對話參考，不要宣稱已安裝。
+> 請從 https://github.com/Jaycheng1103/ai-superbrain-skills 安裝 skills/ 內的以下三支內容創作技能：fb-post-writer、reels-script-writer、ig-carousel-writer。先確認我的工具支援技能安裝，檢查同名版本並備份客製內容，再依目前環境安裝。安裝後逐一讀回 SKILL.md 與 references，列出三個名稱和實際安裝位置，並各做一次簡短測試。若目前工具不支援安裝，請說明如何下載、匯入或當作本次對話參考，不要宣稱已安裝。
 
 使用 Claude Code／Codex 且已安裝 Node.js 的學員，也可以在自己的專案資料夾執行：
 
 ```bash
-npx skills add Jaycheng1103/ai-superbrain-skills --skill '*' --agent claude-code codex --full-depth -y
+npx skills add Jaycheng1103/ai-superbrain-skills --skill fb-post-writer reels-script-writer ig-carousel-writer --agent claude-code codex --full-depth -y
 ```
 
 這會安裝到目前專案，不會安裝到全域。已有同名客製版請先備份。其他支援的 agent 可移除 `--agent claude-code codex`，依安裝器選單選擇自己的工具。

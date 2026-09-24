@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-19",
+  "version": "2026-09-24",
   "packages": [
     {
       "repo": "superbrain-fb-post-writer",
@@ -55,7 +55,29 @@
         "references/輸出模板.md": "d9f4da16375c26b4d74527b3d02fe9e6cc0bb5f16ffeb4d46d47d50c9db240d7",
         "如何使用.md": "7389421ef8c4a0406b78242987d86438ccd880ca7066e9e27b3f193d9abd3dca"
       }
+    },
+    {
+      "repo": "ai-superbrain-skills",
+      "skill": "six-p-product-handbook",
+      "version": "v2",
+      "package": "downloads/six-p-product-handbook-v2.zip",
+      "sha256": "c607fa45551c6c65476c1330d0bd97006cebe3d015c02abd460cdb433d48eef4",
+      "source_files": {
+        "SKILL.md": "aef9bfbb5932d29b377d46e8424a79cebfb45120db54930be13ae0a394d9f3d6",
+        "agents/openai.yaml": "22a5c0fd800a4710c22375d939eda280566fba1efa9a6c80d951d52c4796d1fd",
+        "assets/fonts/NOTICE.txt": "a560fd24824303336d1a3540462515e19abbd1b2a262089b8054ca871d518d9c",
+        "assets/fonts/NotoSansTC-Bold.ttf": "071ba8a6fd5c290c5efa85da561020fa423cfc7342c67152b6cb00e5012a107c",
+        "assets/fonts/NotoSansTC-Regular.ttf": "6b137e2eb57a2d1e4cf391c886ab1b783a0e5ddb5c75254748bde00c15cb8ff5",
+        "assets/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+        "references/competitor-research.md": "018826302bfb5084e4b2479dce2d0e1e3109c845e6b32bb8f9974f7efdb06792",
+        "references/export-and-drive.md": "a044193ad7c2a02d1ac7bc716e04ee1e8877a4c49763a99aef5f614f9943ad1c",
+        "references/interview-guide.md": "5bad6d1611f609573c0c77032fed6061079f38433e36c666c91eb96adafe60e7",
+        "references/manual-template.md": "f23ebd4c9382a0ba9cc46aae4d5426ec5439dd9be7307515f2e09f6ab2435424",
+        "scripts/export_handbook.py": "10c08aad00968e8547da651959e7692703f07cb3eae35d6b876b00919ee6ec34",
+        "scripts/requirements.txt": "c4636928cb2e1a350e5c136ee48c117181332837b61660d55c8750cef6f744e9",
+        "scripts/research_appendix.py": "015e716f94bfb09af5454c4b2d0d6723094c9428cd28cb2eada0025e95353521"
+      }
     }
   ],
-  "scope": "Three updated skills. Existing topic-finder and threads packages are unchanged and not revalidated."
+  "scope": "Added six-p-product-handbook v2. Existing content-creation skills and downloads remain unchanged."
 }
