@@ -77,7 +77,22 @@
         "scripts/requirements.txt": "c4636928cb2e1a350e5c136ee48c117181332837b61660d55c8750cef6f744e9",
         "scripts/research_appendix.py": "015e716f94bfb09af5454c4b2d0d6723094c9428cd28cb2eada0025e95353521"
       }
+    },
+    {
+      "repo": "ai-superbrain-skills",
+      "skill": "golden-business-card-sales-talk",
+      "version": "v1",
+      "package": "downloads/golden-business-card-sales-talk-v1.zip",
+      "sha256": "3990009844584fb6db0ae160e992a4677a5b8276e903285ff7a3207666bedd74",
+      "source_files": {
+        "SKILL.md": "ee0d0034f10f53d49a402a60c52f70c50a5b34f6c0a73e94667616f5a013a1ec",
+        "agents/openai.yaml": "97cc6cad431d609d3af7d4139d8e15e54c2b99b93da5c6d30edd1bbbf76f4ea6",
+        "references/delivery.md": "e367fe405a1d4603091cb50a249dc8f0d4b7bc9eeb2338419a188ce0364959dd",
+        "references/intake.md": "bc9cdad9f778cdec8ae8bbc6ae02a84fdd1e62ac1c6d81a433a45325245f8b4c",
+        "references/research.md": "17d7f00fb0572cb07ea7db3b10229a0cbdfdb3943b000bd05edd2a01cdaab767",
+        "references/sales-talk-template.md": "a4eb75ef2c0dd60337c138360dd65960034d245719653bb1a527f5c59b2ac8fb"
+      }
     }
   ],
-  "scope": "Added six-p-product-handbook v2. Existing content-creation skills and downloads remain unchanged."
+  "scope": "Added golden-business-card-sales-talk v1 and five teaching diagrams. Existing packages remain unchanged."
 }

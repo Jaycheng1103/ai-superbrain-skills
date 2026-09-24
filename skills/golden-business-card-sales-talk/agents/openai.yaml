@@ -1,0 +1,4 @@
+interface:
+  display_name: "黃金名片銷講教練"
+  short_description: "從產品手冊研究競品，依開場、WHAT、HOW、WHY 製作銷講大綱與完整逐字稿。"
+  default_prompt: "請用 $golden-business-card-sales-talk 讀取我的產品資料，研究相關競品，依固定模板做銷講大綱，再展開成完整逐字稿。"
