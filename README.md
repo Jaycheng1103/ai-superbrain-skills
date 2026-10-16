@@ -8,11 +8,11 @@
 
 **[黃金名片學員安裝與使用入口](golden-business-card/README.md)** · [下載安裝包](downloads/golden-business-card-sales-talk-v1.zip?raw=true)
 
-## 6P 產品手冊訪談教練（2026-09-24 新增）
+## 6P 產品手冊訪談教練（2026-09-24 新增，2026-10-16 升級 v3：市場研究＋《$100M Offers》報價設計）
 
-適合教練、顧問、接案、行銷、房仲、保險與其他行業。逐步訪談完成六個 P，再用學員自己的 Tavily 研究至少五個相關競品，附來源與改善建議，輸出 PDF；可依要求上傳自己的 Google Drive。
+適合教練、顧問、接案、行銷、房仲、保險與其他行業。兩個模式：市場研究（用 Tavily 做競品分析、比較候選利基市場，選定一個）與 6P 手冊（用 Hormozi《$100M Offers》的方法訪談完成六個 P，附價值堆疊、定價、保證與銷售頁素材），輸出 PDF；可依要求上傳自己的 Google Drive。
 
-**[6P 學員安裝與使用入口](six-p-handbook/README.md)** · [下載 6P 安裝包](downloads/six-p-product-handbook-v2.zip?raw=true)
+**[6P 學員安裝與使用入口](six-p-handbook/README.md)** · [下載 6P 安裝包](downloads/six-p-product-handbook-v3.zip?raw=true)
 
 ## 一次安裝內容創作三件組
 

@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-24",
+  "version": "2026-10-16",
   "packages": [
     {
       "repo": "superbrain-fb-post-writer",
@@ -59,23 +59,29 @@
     {
       "repo": "ai-superbrain-skills",
       "skill": "six-p-product-handbook",
-      "version": "v2",
-      "package": "downloads/six-p-product-handbook-v2.zip",
-      "sha256": "c607fa45551c6c65476c1330d0bd97006cebe3d015c02abd460cdb433d48eef4",
+      "version": "v3",
+      "package": "downloads/six-p-product-handbook-v3.zip",
+      "sha256": "f9876c212dcdf2d791dc3ce9670a19802e5077a220cb5452d4354b8987099cf3",
       "source_files": {
-        "SKILL.md": "aef9bfbb5932d29b377d46e8424a79cebfb45120db54930be13ae0a394d9f3d6",
-        "agents/openai.yaml": "22a5c0fd800a4710c22375d939eda280566fba1efa9a6c80d951d52c4796d1fd",
+        "SKILL.md": "e99d386020801ff6a09fa5515d339eee30c5d18bc6e18d0702caac19b9ee4d15",
+        "agents/openai.yaml": "c5cfec9ce7012081e4b1a4ea99c0d8a462579af43321b853c9e6ff021fdaa25c",
         "assets/fonts/NOTICE.txt": "a560fd24824303336d1a3540462515e19abbd1b2a262089b8054ca871d518d9c",
         "assets/fonts/NotoSansTC-Bold.ttf": "071ba8a6fd5c290c5efa85da561020fa423cfc7342c67152b6cb00e5012a107c",
         "assets/fonts/NotoSansTC-Regular.ttf": "6b137e2eb57a2d1e4cf391c886ab1b783a0e5ddb5c75254748bde00c15cb8ff5",
         "assets/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
         "references/competitor-research.md": "018826302bfb5084e4b2479dce2d0e1e3109c845e6b32bb8f9974f7efdb06792",
-        "references/export-and-drive.md": "a044193ad7c2a02d1ac7bc716e04ee1e8877a4c49763a99aef5f614f9943ad1c",
+        "references/export-and-drive.md": "14179f269cc8861283adebba6e56beb86d5584c8b300a772f4be58180d54acde",
         "references/interview-guide.md": "5bad6d1611f609573c0c77032fed6061079f38433e36c666c91eb96adafe60e7",
-        "references/manual-template.md": "f23ebd4c9382a0ba9cc46aae4d5426ec5439dd9be7307515f2e09f6ab2435424",
-        "scripts/export_handbook.py": "10c08aad00968e8547da651959e7692703f07cb3eae35d6b876b00919ee6ec34",
+        "references/manual-template.md": "1e034bc226e2fca7d6ae56389ad843bc32c0e1362e6ad5dbf12efa4fa8c07caa",
+        "references/market-research.md": "c5a60a169df9101f91f3f8f4aebf14fbda53690cdc97918d0808efbcca54a77b",
+        "references/offer-design.md": "a2279972ca813a87368d62c045cfb4151ab68ffd982817cc46eb5910704aad61",
+        "scripts/export_common.py": "6df6c51592fa17321fe670001bf6b9c480f3c1345712cfff7912575252ff03eb",
+        "scripts/export_handbook.py": "2db64e6a7a7f5002e1a0387991c905d3c13ee71935e8069e004a4d98b144feeb",
+        "scripts/export_market_report.py": "9ef733bbe56d1ab40b93bee40f4e93ab012e06c6eba59f0e662bbc9fda4f15f3",
+        "scripts/offer_design.py": "1cf77620b79b66c92ded3c634f9ecc9e5b03805e3d271c0d63c278269a8775de",
         "scripts/requirements.txt": "c4636928cb2e1a350e5c136ee48c117181332837b61660d55c8750cef6f744e9",
-        "scripts/research_appendix.py": "015e716f94bfb09af5454c4b2d0d6723094c9428cd28cb2eada0025e95353521"
+        "scripts/research_appendix.py": "8ec9fa702e7a52bcc68cddf792fa6510e603362f6c98ac7fca5cf2695d01358e",
+        "tests/test_exports.py": "f9c9a70a6ace6724d7b0792d90b569daa12f5685964d1de4069b8baebd39b1de"
       }
     },
     {
@@ -94,5 +100,5 @@
       }
     }
   ],
-  "scope": "Added golden-business-card-sales-talk v1 and five teaching diagrams. Existing packages remain unchanged."
+  "scope": "Upgraded six-p-product-handbook to v3 with market research and offer design exports. The v2 archive and other packages remain unchanged."
 }

@@ -1,4 +1,4 @@
 interface:
   display_name: "6P 產品手冊訪談教練"
-  short_description: "依服務模式引導各行業學員完成六個 P，用 Tavily 研究五個競品，附建議並輸出 PDF。"
-  default_prompt: "請使用 $six-p-product-handbook 訪談我，先了解我的服務模式，再引導我完成 6P 產品手冊，使用 Tavily 研究至少五個相關競品，附上來源與改善建議並輸出 PDF。"
+  short_description: "市場研究選利基、用《$100M Offers》方法訪談完成 6P 產品手冊（含價值堆疊與價格表），附競品研究並輸出 PDF。"
+  default_prompt: "請使用 $six-p-product-handbook 訪談我，先了解我的服務模式，用《$100M Offers》的方法引導我完成 6P 產品手冊與報價設計，使用 Tavily 研究至少五個相關競品，附上來源與改善建議並輸出 PDF。"

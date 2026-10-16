@@ -61,6 +61,39 @@ python3 "<skill資料夾>/scripts/export_handbook.py" --input "<本次學員資�
 
 PDF 來源標題可點擊；腳本同時讀回所有研究文字與連結註記。`export-report.json` 記錄研究狀態、競品數、來源連結數。目視檢查涵蓋研究附錄與最末建議頁。研究與建議含有學員內部策略，預設隨私人手冊交付；對外銷售版另製，不混入研究附錄。
 
+## 報價設計資料（v3）
+
+`--init` 會附 `offer`。舊版 JSON 沒有 `offer` 仍可匯出。每個值都是 `{"text", "status"}`（狀態同手冊：已確認、待驗證、待補資料、不適用），清單內的項目各自帶狀態：
+
+```json
+{
+  "name": {"text": "方案名稱", "status": "待驗證"},
+  "one_liner": {"text": "幫誰、做到什麼、多快", "status": "待驗證"},
+  "obstacles": [{"text": "障礙", "driver": "相信會成功", "status": "已確認"}],
+  "stack": [{"item": "項目名稱", "solves": "解決的障礙", "delivery": "交付方式",
+             "value": "參考價值（含幣別）", "basis": "價值依據", "bonus": false, "status": "待驗證"}],
+  "total_value": {"text": "NT$ 總參考價值", "status": "待驗證"},
+  "price": {"text": "NT$ 實際售價與付款方式", "status": "待補資料"},
+  "guarantee": {"text": "類型與條件，或不使用與原因", "status": "待補資料"},
+  "scarcity": {"text": "真實限制，或不使用與原因", "status": "不適用"},
+  "urgency": {"text": "真實截止或期限，或不使用與原因", "status": "不適用"},
+  "sales_page": {"headline": {...}, "subheadline": {...}, "cta": {...}}
+}
+```
+
+`driver` 只能是：夢想結果、相信會成功、時間延遲、付出與犧牲。PDF 與 Markdown 在六個 P 之後、待確認事項之前放「報價設計」：方案名稱、一句話、障礙清單、價值堆疊表（贈品另列）、總參考價值對照售價、保證、稀缺、急迫、銷售頁素材。確認版不可有待補或待驗證的 offer 欄位。
+
+## 市場報告匯出（任務 5）
+
+市場研究模式用 `scripts/export_market_report.py`：
+
+```sh
+python3 "<skill資料夾>/scripts/export_market_report.py" --init "<本次學員資料夾>/market.json"
+python3 "<skill資料夾>/scripts/export_market_report.py" --input "<本次學員資料夾>/market.json" --out-dir "<本次學員資料夾>/市場研究_v1"
+```
+
+`market.json` 含 `meta`（學員背景摘要、地區、日期、工具、狀態：草稿／部分完成／完成）、`candidates`（每個候選利基：名稱、客群原話摘要與來源、四條件分數 1–5 或 null 與理由、競品清單沿用 research 的 competitors 欄位格式、市場空隙）、`decision`（選定的利基、理由、放棄其他的理由、下一步驗證）、`limitations`。產出 `競品分析報告.md`、`競品分析報告.pdf`、`export-report.json`，同樣讀回文字與連結並逐頁目視檢查。
+
 ## 讀回檢查
 
 核對六個 P、18 欄、總覽與正文一致；檢查中文、數字、日期、價格、幣別及條件。

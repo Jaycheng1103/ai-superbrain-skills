@@ -17,6 +17,49 @@ def text(value, label):
         raise ValueError('研究欄位不可空白：' + label)
 
 
+
+def validate_sources(sources, label, required=False):
+    if not isinstance(sources, list) or (required and not sources):
+        raise ValueError(label + ' 必須是來源陣列；有評分或競品時至少需一個來源')
+    for source in sources:
+        if not isinstance(source, dict):
+            raise ValueError(label + ' 每個來源必須是物件')
+        for key in ['title', 'url', 'checked_at', 'supports']:
+            text(source.get(key), label + '.' + key)
+        url = urlsplit(source['url'])
+        if url.scheme not in {'http', 'https'} or not url.hostname or url.username or url.password:
+            raise ValueError('來源須為不含登入資訊的 HTTP(S) 網址')
+        date.fromisoformat(source['checked_at'])
+
+
+def validate_competitors(competitors):
+    if not isinstance(competitors, list):
+        raise ValueError('competitors 必須為陣列')
+    ids, names = set(), set()
+    for competitor in competitors:
+        if not isinstance(competitor, dict):
+            raise ValueError('每家競品必須是物件')
+        for key in ['id', 'name', 'type', 'market', 'relevance', 'learn', 'cautions']:
+            text(competitor.get(key), key)
+        if competitor['type'] not in {'直接競品', '相鄰參考'}:
+            raise ValueError('競品類型須為直接競品或相鄰參考')
+        canonical = ''.join(competitor['name'].casefold().split())
+        if competitor['id'] in ids or canonical in names:
+            raise ValueError('競品 ID 或供應者重複，不能用同一家湊數')
+        ids.add(competitor['id']); names.add(canonical)
+        if not isinstance(competitor.get('verified'), bool):
+            raise ValueError('verified 必須明確表示是否已讀到一手來源')
+        if not isinstance(competitor.get('six_p'), dict) or set(competitor['six_p']) != set(PS):
+            raise ValueError('每家競品都須包含六個 P，未知請寫頁面未載明')
+        for key, value in competitor['six_p'].items():
+            text(value, key)
+        sources = competitor.get('sources')
+        if not isinstance(sources, list) or not sources:
+            raise ValueError('每家競品至少要有一個來源')
+        validate_sources(sources, 'competitors.sources', required=True)
+    return ids
+
+
 def validate_research(research):
     if research is None:
         return
@@ -31,33 +74,10 @@ def validate_research(research):
     recommendations = research.get('recommendations')
     if not isinstance(competitors, list) or not isinstance(recommendations, list):
         raise ValueError('competitors 與 recommendations 必須為陣列')
-    ids, names = set(), set()
-    for competitor in competitors:
-        for key in ['id', 'name', 'type', 'market', 'relevance', 'learn', 'cautions']:
-            text(competitor.get(key), key)
-        if competitor['type'] not in {'直接競品', '相鄰參考'}:
-            raise ValueError('競品類型須為直接競品或相鄰參考')
-        canonical = ''.join(competitor['name'].casefold().split())
-        if competitor['id'] in ids or canonical in names:
-            raise ValueError('競品 ID 或供應者重複，不能用同一家湊數')
-        ids.add(competitor['id']); names.add(canonical)
-        if not isinstance(competitor.get('verified'), bool):
-            raise ValueError('verified 必須明確表示是否已讀到一手來源')
-        if set(competitor.get('six_p', {})) != set(PS):
-            raise ValueError('每家競品都須包含六個 P，未知請寫頁面未載明')
-        for key, value in competitor['six_p'].items():
-            text(value, key)
-        sources = competitor.get('sources')
-        if not isinstance(sources, list) or not sources:
-            raise ValueError('每家競品至少要有一個來源')
-        for source in sources:
-            for key in ['title', 'url', 'checked_at', 'supports']:
-                text(source.get(key), key)
-            url = urlsplit(source['url'])
-            if url.scheme not in {'http', 'https'} or not url.hostname or url.username or url.password:
-                raise ValueError('來源須為不含登入資訊的 HTTP(S) 網址')
-            date.fromisoformat(source['checked_at'])
+    ids = validate_competitors(competitors)
     for recommendation in recommendations:
+        if not isinstance(recommendation, dict):
+            raise ValueError('每項建議必須是物件')
         for key in ['title', 'related_p', 'observation', 'action', 'validation']:
             text(recommendation.get(key), key)
         if recommendation['related_p'] not in PS:
